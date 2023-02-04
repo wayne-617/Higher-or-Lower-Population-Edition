@@ -21,8 +21,7 @@
   background-image: url('images/world.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: cover;
-  background-position: 50% 50%;
+  height: 100vh;
 }
 
 .header {
@@ -62,24 +61,42 @@ h3 {
   top: 50px;
   bottom: 5px;
   left: 50%;
+} 
+.grid-container{
+  display: grid;
+}
+
+.container {
+  height: 100vh;
+  flex: column;
+  margin: auto;
 }
 
 .images {
   color: white;
-  margin-top: 300px;
-  margin-bottom: 300px;
+  margin-top: 15%;
+  margin-bottom: 15%;
 }
 
 .image1 {
-  text-align: left;
-  margin-left: 150px;
-  display:inline-block;
+  padding-top: 10px;
+  width: auto;
+  height: auto;
+  float: left;
+  margin: auto;
+  grid-column-start: 1;
+  grid-column-end: 2;
+
 }
 
-.image2 {
-  display:inline-block;
-  text-align: right;
-  margin-left: 400px;
+ .image2 {
+  padding-top: 10px;
+  width: auto;
+  height: auto;
+  margin: auto;
+  float: right;
+  grid-column-start:2;
+  grid-column-end: 3;
 }
 
 .button1 {
