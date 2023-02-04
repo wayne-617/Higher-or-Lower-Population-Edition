@@ -24,20 +24,26 @@ function getRandomCountry(total)  {
 
 }
 
-let i = getRandomCountry(249);
-console.log(i);
+let a = getRandomCountry(249);
+console.log(a);
+
+let b = getRandomCountry(249);
+console.log(b)
 
 
 
 function initialize(countriesData)  {
     countries = countriesData;
 
-    console.log("Population of", countries[i].name.common, "is", countries[i].population);
-//    console.log(countries[i].flags.svg);
-    let flagLink=(countries[i].flags.svg);
-    console.log(flagLink);
+    console.log("Population of", countries[a].name.common, "is", countries[a].population);
+    let flagLinkA=(countries[a].flags.svg);
+    console.log(flagLinkA);
+    document.querySelector("#flag1 img").src = flagLinkA;
 
-    document.querySelector("#flag img").src = flagLink;
+    console.log("Population of", countries[b].name.common, "is", countries[b].population);
+    let flagLinkB=(countries[b].flags.svg);
+    console.log(flagLinkB);
+    document.querySelector("#flag2 img").src = flagLinkB;
 
 }
 
