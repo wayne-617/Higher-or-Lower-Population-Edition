@@ -71,16 +71,12 @@
   }
 
   .image1 {
-    background-color: black;
     text-align: left;
-    display: inline-block;
     margin-left: 100px;
   }
 
   .image2 {
-    background-color: black;
     text-align: right;
-    display: inline-block;
     margin-left: 1420px;
   }
 
