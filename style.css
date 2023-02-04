@@ -1,4 +1,4 @@
-.button {
+.startButton {
     background-color: #0d3f8b;
     color: white;
     text-align: center;
@@ -45,6 +45,57 @@
     font-size: 25px;
     border-radius: 15px;
   }
+
+  h3 {
+    font-size: 25px;
+    background-color: black;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    margin: 0px 600px;
+  }
+
+  .verticalLine {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width: 6px;
+    top: 40px;
+    bottom: 5px;
+    left: 50%;
+  }
+
+  .images {
+    
+    color: white;
+    margin-top: 100px;
+  }
+
+  .image1 {
+    background-color: black;
+    text-align: left;
+    display: inline-block;
+    margin-left: 100px;
+  }
+
+  .image2 {
+    background-color: black;
+    text-align: right;
+    display: inline-block;
+    margin-left: 1420px;
+  }
+
+  .button1 {
+    display:inline-block;
+    background-color: #0d3f8b;
+  }
+
+  .button2 {
+    display:inline-block;
+    background-color: #0d3f8b;
+  }
+
+  
+
 
   flag-img  {
     height: 200px;
