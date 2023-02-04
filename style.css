@@ -64,20 +64,22 @@
     left: 50%;
   }
 
-  .images::after {
+  .images {
     color: white;
-    margin-top: 100px;
-    
+    margin-top: 300px;
+    margin-bottom: 300px;
   }
 
   .image1 {
-    margin-left: 100px;
+    text-align: left;
+    margin-left: 150px;
     display:inline-block;
   }
 
   .image2 {
     display:inline-block;
-    margin-left: 1220px;
+    text-align: right;
+    margin-left: 400px;
   }
 
   .button1 {
