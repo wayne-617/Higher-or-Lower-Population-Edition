@@ -1,5 +1,6 @@
 let countries;
-
+let populationA;
+let populationB;
 
 /*fetch("https://restcountries.com/v3.1/all")
 then(function(res){
@@ -39,14 +40,37 @@ function initialize(countriesData)  {
     let flagLinkA=(countries[a].flags.svg);
     console.log(flagLinkA);
     document.querySelector("#flag1 img").src = flagLinkA;
+    populationA=(countries[a].population);
 
     console.log("Population of", countries[b].name.common, "is", countries[b].population);
     let flagLinkB=(countries[b].flags.svg);
     console.log(flagLinkB);
     document.querySelector("#flag2 img").src = flagLinkB;
-
+    populationB=(countries[b].population);
 }
 
+let score = 0
 
+function compareHigher()  {
+    if(populationB > populationA)
+    {
+        score++;
+    }
+    else
+    {
+        alert("Game over. Your score was " + score);
+    }
+}
+
+function compareLower()  {
+    if(populationB < populationA)
+    {
+        score++;
+    }
+    else
+    {
+        alert("Game over. Your score was " + score);
+    }
+}
 
 
