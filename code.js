@@ -33,6 +33,14 @@ function initialize(countriesData)  {
     countries = countriesData;
 
     console.log("Population of", countries[i].name.common, "is", countries[i].population);
+//    console.log(countries[i].flags.svg);
+    let flagLink=(countries[i].flags.svg);
+    console.log(flagLink);
+
+    document.querySelector("#flag img").src = flagLink;
+
 }
+
+
 
 
