@@ -78,7 +78,11 @@ function compareHigher()  {
     }
     else
     {
-        alert("Game over. Your score was " + score);
+        document.getElementById("question").innerHTML = "Population: " + populationB.toLocaleString("en-US");
+        setTimeout(() => {
+            alert("Game over. Your score was " + score);
+        },500);
+
     }
 }
 
@@ -90,7 +94,11 @@ function compareLower()  {
     }
     else
     {
-        alert("Game over. Your score was " + score);
+        document.getElementById("question").innerHTML = "Population: " + populationB.toLocaleString("en-US");
+        setTimeout(() => {
+            alert("Game over. Your score was " + score);
+        },500);
+
     }
 }
 
