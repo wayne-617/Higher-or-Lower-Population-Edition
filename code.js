@@ -1,6 +1,8 @@
 let countries;
 let populationA;
 let populationB;
+let nameA;
+let nameB;
 
 /*fetch("https://restcountries.com/v3.1/all")
 then(function(res){
@@ -41,6 +43,9 @@ function initialize(countriesData)  {
     console.log(flagLinkA);
     document.querySelector("#flag1 img").src = flagLinkA;
     populationA=(countries[a].population);
+    nameA=(countries[a].name.common);
+    document.getElementById("nameA").innerHTML = nameA;
+    
 
     console.log("Population of", countries[b].name.common, "is", countries[b].population);
     let flagLinkB=(countries[b].flags.svg);
