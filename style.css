@@ -58,7 +58,7 @@ h3 {
   position: absolute;
   background-color: rgb(255, 255, 255);
   width: 6px;
-  top: 5%;
+  top: 1%;
   bottom: 1%;
   left: 50%;
 } 
@@ -73,7 +73,7 @@ h3 {
 }
 
 .image1 {
-  padding-top: 50px;
+  padding-top: 5%;
   width: auto;
   height: auto;
   float: left;
@@ -98,11 +98,17 @@ h3 {
   font-size: 32px;
 }
 
+#question {
+  color: white;
+  font-size: 32px;
+}
+
  .image2 {
+  padding-top: 5%;
   width: auto;
   height: auto;
-  margin: auto;
   float: right;
+  margin: auto;
   grid-column-start:2;
   grid-column-end: 3;
 }
@@ -114,7 +120,6 @@ h3 {
   color: white;
   float: right;
   margin-right: 10%;
-  text-align: center;
   cursor: pointer;
   font-family: rooney-sans,sans-serif;
   width: 300px;
@@ -127,7 +132,6 @@ h3 {
   background-color: #0d3f8b;
   color: white;
   float: right;
-  text-align: center;
   cursor: pointer;
   font-family: rooney-sans,sans-serif;
   width: 300px;
