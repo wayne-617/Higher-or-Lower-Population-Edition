@@ -42,7 +42,7 @@ function initialize(countriesData)  {
     let flagLinkA=(countries[a].flags.svg);
     console.log(flagLinkA);
     document.querySelector("#flag1 img").src = flagLinkA;
-    populationA=(countries[a].population);
+    populationA=(countries[a].population.toLocaleString("en-US"));
     nameA=(countries[a].name.common);
     document.getElementById("nameA").innerHTML = nameA;
     document.getElementById("populationA").innerHTML = "Population: " + populationA;
@@ -51,7 +51,7 @@ function initialize(countriesData)  {
     let flagLinkB=(countries[b].flags.svg);
     console.log(flagLinkB);
     document.querySelector("#flag2 img").src = flagLinkB;
-    populationB=(countries[b].population);
+    populationB=(countries[b].population.toLocaleString("en-US"));
     nameB=(countries[b].name.common);
     document.getElementById("nameB").innerHTML = nameB;
 }
