@@ -58,10 +58,23 @@ function initialize(countriesData)  {
 
 let score = 0
 
+function reload()   {
+
+    a = b;
+    console.log(a);
+    b = getRandomCountry(249);
+    console.log(b);
+    fetch("https://restcountries.com/v3.1/all")
+        .then(res => res.json())
+        .then(data => initialize(data))
+
+}
+
 function compareHigher()  {
     if(populationB > populationA)
     {
         score++;
+        reload();
     }
     else
     {
@@ -73,6 +86,7 @@ function compareLower()  {
     if(populationB < populationA)
     {
         score++;
+        reload();
     }
     else
     {
