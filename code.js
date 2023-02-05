@@ -45,13 +45,15 @@ function initialize(countriesData)  {
     populationA=(countries[a].population);
     nameA=(countries[a].name.common);
     document.getElementById("nameA").innerHTML = nameA;
-    
+    document.getElementById("populationA").innerHTML = "Population: " + populationA;
 
     console.log("Population of", countries[b].name.common, "is", countries[b].population);
     let flagLinkB=(countries[b].flags.svg);
     console.log(flagLinkB);
     document.querySelector("#flag2 img").src = flagLinkB;
     populationB=(countries[b].population);
+    nameB=(countries[b].name.common);
+    document.getElementById("nameB").innerHTML = nameB;
 }
 
 let score = 0
