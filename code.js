@@ -57,6 +57,7 @@ function initialize(countriesData)  {
 }
 
 let score = 0
+document.getElementById("score").innerHTML = "Your Score: " + score;
 
 function reload()   {
 
@@ -75,13 +76,14 @@ function compareHigher()  {
     {
         score++;
         reload();
+        document.getElementById("score").innerHTML = "Your Score: " + score;
     }
     else
-    {
+    {   
+        document.getElementById("higherButton").style.visibility = "hidden";
+        document.getElementById("lowerButton").style.visibility = "hidden";
         document.getElementById("question").innerHTML = "Population: " + populationB.toLocaleString("en-US");
-        setTimeout(() => {
-            alert("Game over. Your score was " + score);
-        },500);
+        document.getElementById("score").innerHTML = "Your Score: " + score;
 
     }
 }
@@ -91,15 +93,15 @@ function compareLower()  {
     {
         score++;
         reload();
+        document.getElementById("score").innerHTML = "Your Score: " + score;
     }
     else
-    {
+    {   
+        document.getElementById("higherButton").style.visibility = "hidden";
+        document.getElementById("lowerButton").style.visibility = "hidden";
         document.getElementById("question").innerHTML = "Population: " + populationB.toLocaleString("en-US");
-        setTimeout(() => {
-            alert("Game over. Your score was " + score);
-        },500);
+        document.getElementById("score").innerHTML = "Your Score: " + score;
 
     }
 }
-
 

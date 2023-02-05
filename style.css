@@ -103,6 +103,16 @@ h3 {
   font-size: 32px;
 }
 
+#score {
+  color: white;
+  font-size: 32px;
+}
+
+#blank  {
+  color: rgba(255, 255, 255, 0);
+  font-size: 32px;
+}
+
  .image2 {
   padding-top: 5%;
   width: auto;
