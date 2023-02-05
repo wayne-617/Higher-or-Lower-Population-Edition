@@ -84,6 +84,8 @@ function compareHigher()  {
         document.getElementById("lowerButton").style.visibility = "hidden";
         document.getElementById("question").innerHTML = "Population: " + populationB.toLocaleString("en-US");
         document.getElementById("score").innerHTML = "Your Score: " + score;
+        document.getElementById("restartButton").style.visibility = "visible";
+        document.getElementById("backToMenu").style.visibility = "visible";
 
     }
 }
@@ -101,7 +103,8 @@ function compareLower()  {
         document.getElementById("lowerButton").style.visibility = "hidden";
         document.getElementById("question").innerHTML = "Population: " + populationB.toLocaleString("en-US");
         document.getElementById("score").innerHTML = "Your Score: " + score;
-
+        document.getElementById("restartButton").style.visibility = "visible";
+        document.getElementById("backToMenu").style.visibility = "visible";
     }
 }
 
