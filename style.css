@@ -94,9 +94,30 @@ h3 {
 }
 
 .button1 {
-  padding-left: 75%;
+  margin-top: 5%;
+  border-radius: 25px;
+  font-size: 32px;
+  background-color: #0d3f8b;
+  color: white;
+  float: right;
+  margin-right: 10%;
+  text-align: center;
+  cursor: pointer;
+  font-family: rooney-sans,sans-serif;
+  width: 300px;
+  height: 150px;
 }
 
 .button2 {
-  padding-left: 75%;
+  margin-top: 5%;
+  border-radius: 25px;
+  font-size: 32px;
+  background-color: #0d3f8b;
+  color: white;
+  float: right;
+  text-align: center;
+  cursor: pointer;
+  font-family: rooney-sans,sans-serif;
+  width: 300px;
+  height: 150px;
 }
